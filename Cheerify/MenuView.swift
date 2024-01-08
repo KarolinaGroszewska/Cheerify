@@ -75,6 +75,16 @@ struct MenuView: View {
                 .foregroundColor(Color.white)
                 .background(Color(red: 196/255, green: 197/255, blue: 202/255))
                 .clipShape(RoundedRectangle(cornerRadius: 25))
+                NavigationLink {
+                    CustomView()
+                } label: {
+                    Image(systemName: "pencil")
+                    Text("Custom Affirmations")
+                }
+                .padding()
+                .foregroundColor(Color.white)
+                .background(Color(red: 196/255, green: 197/255, blue: 202/255))
+                .clipShape(RoundedRectangle(cornerRadius: 25))
                 Spacer()
             }
         }

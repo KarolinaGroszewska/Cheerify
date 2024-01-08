@@ -17,6 +17,7 @@
 		4A5B04132B4C986300535F08 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B04122B4C986300535F08 /* PersistenceController.swift */; };
 		4A5B04172B4C9A6E00535F08 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B04162B4C9A6E00535F08 /* FavoritesView.swift */; };
 		4A5B04192B4C9AB100535F08 /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B04182B4C9AB100535F08 /* Affirmation.swift */; };
+		4A5B041B2B4CA08700535F08 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B041A2B4CA08700535F08 /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4A5B04122B4C986300535F08 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		4A5B04162B4C9A6E00535F08 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		4A5B04182B4C9AB100535F08 /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		4A5B041A2B4CA08700535F08 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				4A5B04122B4C986300535F08 /* PersistenceController.swift */,
 				4A5B040F2B4C97BE00535F08 /* Affirmation.xcdatamodeld */,
 				4A5AAD242B48ABA4004ADC02 /* MenuView.swift */,
+				4A5B041A2B4CA08700535F08 /* CustomView.swift */,
 				4A5AAD1A2B489834004ADC02 /* Assets.xcassets */,
 				4A5AAD1C2B489834004ADC02 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				4A5AAD272B48AE66004ADC02 /* AddView.swift in Sources */,
 				4A5B04112B4C97BE00535F08 /* Affirmation.xcdatamodeld in Sources */,
 				4A5AAD192B489833004ADC02 /* ContentView.swift in Sources */,
+				4A5B041B2B4CA08700535F08 /* CustomView.swift in Sources */,
 				4A5B04132B4C986300535F08 /* PersistenceController.swift in Sources */,
 				4A5B04192B4C9AB100535F08 /* Affirmation.swift in Sources */,
 				4A5B04172B4C9A6E00535F08 /* FavoritesView.swift in Sources */,

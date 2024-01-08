@@ -1,16 +1,16 @@
 //
-//  ContentView.swift
+//  CustomView.swift
 //  Cheerify
 //
-//  Created by Kari on 1/5/24.
+//  Created by Kari Groszewska on 1/8/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    @Environment(\.managedObjectContext) var managedObjectContext
-    @State private var affirmation: String = "Get started by pressing the refresh button..."
-    @State var favorite = "heart"
+struct CustomView: View {
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.text),])
+    var affirmations: FetchedResults<Entity>
+    @State private var affirmation: String = "You do not currently have any custom affirmations!"
     var body: some View {
         NavigationStack() {
             ZStack{
@@ -59,9 +59,9 @@ struct ContentView: View {
                     Text(affirmation)
                         .onAppear {
                             Task {
-                                let (data, _) = try await URLSession.shared.data(from: URL(string: "https://www.affirmations.dev/")!)
-                                let decodedResponse = try? JSONDecoder().decode(Affirmation.self, from: data)
-                                affirmation = decodedResponse?.affirmation ?? "failed"
+                                if let randomAffirmation = affirmations.randomElement() {
+                                    affirmation = randomAffirmation.text ?? "You do not currently have any custom affirmations!"
+                                }
                             }
                         }
                         .font(.largeTitle)
@@ -73,9 +73,9 @@ struct ContentView: View {
                     HStack{
                         Button {
                             Task {
-                                let (data, _) = try await URLSession.shared.data(from: URL(string: "https://www.affirmations.dev/")!)
-                                let decodedResponse = try? JSONDecoder().decode(Affirmation.self, from: data)
-                                affirmation = decodedResponse?.affirmation ?? "failed"
+                                if let randomAffirmation = affirmations.randomElement() {
+                                    affirmation = randomAffirmation.text ?? "You do not currently have any custom affirmations!"
+                                }
                             }
                         } label: {
                             Image(systemName: "arrow.clockwise")
@@ -88,14 +88,10 @@ struct ContentView: View {
                         .padding(.leading, 10)
                         Spacer()
                         Button {
-                                let favAffirmation = Entity(context: managedObjectContext)
-                                favAffirmation.text = affirmation
-                                favAffirmation.isFavorite = true
-                                favAffirmation.isCustom = false
-                                PersistenceController.shared.save()
-                                favorite = "heart.fill"
+                            // TODO: remove from your favorites
+                            print("Favorite button")
                         } label: {
-                            Image(systemName: favorite)
+                            Image(systemName: "heart")
                                 .frame(width: 45, height: 45)
                                 .background(Color(red: 196/255, green: 197/255, blue: 202/255))
                                 .clipShape(Circle())
@@ -108,14 +104,8 @@ struct ContentView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-
     }
 }
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    CustomView()
 }

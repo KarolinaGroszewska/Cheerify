@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct AddView: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
     var backButton : some View { Button(action: {
         self.presentationMode.wrappedValue.dismiss()
         }) {
@@ -22,8 +20,11 @@ struct AddView: View {
                 .padding(.leading, 10)
         }
     }
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var favorite = false
+    @State var newAffirmation = ""
     var body: some View {
-        @State var newAffirmation = ""
         ZStack{
             Color(red: 242/255, green: 237/255, blue: 228/255)
                 .ignoresSafeArea()
@@ -43,10 +44,10 @@ struct AddView: View {
                     }
                     Spacer()
                     Button {
-                        print("Favorite button")
+                        //TODO: fix the heart toggle
+                        favorite.toggle()
                     } label: {
-                        // favorite affirmation button
-                        Image(systemName: "heart")
+                        Image(systemName: favorite ? "heart.fill" : "heart")
                             .frame(width: 45, height: 45)
                             .background(Color(red: 196/255, green: 197/255, blue: 202/255))
                             .clipShape(Circle())
@@ -64,7 +65,11 @@ struct AddView: View {
                   .padding()
                   .lineLimit(3, reservesSpace: true)
                 Button {
-                    
+                    let favAffirmation = Entity(context: managedObjectContext)
+                    favAffirmation.text = newAffirmation
+                    favAffirmation.isFavorite = favorite
+                    favAffirmation.isCustom = true
+                    PersistenceController.shared.save()
                 } label: {
                     Image(systemName: "plus")
                     Text("Save Affirmation")

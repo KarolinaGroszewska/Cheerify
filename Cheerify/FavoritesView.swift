@@ -10,7 +10,7 @@ import SwiftUI
 struct FavoritesView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.text),])
     var affirmations: FetchedResults<Entity>
-    @State private var affirmation: String = "Get started by pressing the refresh button..."
+    @State private var affirmation: String = "You do not currently have any favorite affirmations!"
     var body: some View {
         NavigationStack() {
             ZStack{
