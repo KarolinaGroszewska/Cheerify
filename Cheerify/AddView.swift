@@ -14,12 +14,12 @@ struct AddView: View {
         self.presentationMode.wrappedValue.dismiss()
         }) {
             Image(systemName: "house")
-                .frame(width: 50, height: 50)
+                .frame(width: 45, height: 45)
                 .background(Color(red: 196/255, green: 197/255, blue: 202/255))
                 .clipShape(Circle())
                 .font(.title3)
                 .foregroundColor(Color.white)
-                .padding(.top, 10)
+                .padding(.leading, 10)
         }
     }
     var body: some View {
@@ -30,8 +30,6 @@ struct AddView: View {
             VStack{
                 HStack{
                     backButton
-                        .padding(.leading, 10)
-                        .padding(.trailing, -60)
                     Spacer()
                     VStack {
                         Text("Cheerify")
@@ -44,15 +42,41 @@ struct AddView: View {
                             .foregroundColor(Color(red: 63/255, green: 65/255, blue: 78/255))
                     }
                     Spacer()
+                    Button {
+                        print("Favorite button")
+                    } label: {
+                        // favorite affirmation button
+                        Image(systemName: "heart")
+                            .frame(width: 45, height: 45)
+                            .background(Color(red: 196/255, green: 197/255, blue: 202/255))
+                            .clipShape(Circle())
+                            .font(.title)
+                            .foregroundColor(Color.white)
+                    }
+                    .padding(.trailing, 10)
                 }
                 Spacer()
-//                TextField("Enter your new affirmation...", text: $newAffirmation)
-//                  .multilineTextAlignment(.center)
+                TextField("Enter your new affirmation...", text: $newAffirmation, axis: .vertical)
+                  .multilineTextAlignment(.center)
+                  .font(.title2)
+                  .fontWeight(.bold)
+                  .foregroundColor(Color(red: 63/255, green: 65/255, blue: 78/255))
+                  .padding()
+                  .lineLimit(3, reservesSpace: true)
+                Button {
+                    
+                } label: {
+                    Image(systemName: "plus")
+                    Text("Save Affirmation")
+                }
+                .padding()
+                .foregroundColor(Color.white)
+                .background(Color(red: 196/255, green: 197/255, blue: 202/255))
+                .clipShape(RoundedRectangle(cornerRadius: 25))
                 Spacer()
             }
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: backButton)
     }
 }
 
