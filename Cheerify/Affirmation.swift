@@ -9,4 +9,6 @@ import Foundation
 
 struct Affirmation: Codable {
     let affirmation: String
+//    var isFavorite : Bool = false
+//    var isCustom : Bool = false
 }

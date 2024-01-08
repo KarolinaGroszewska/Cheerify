@@ -70,6 +70,7 @@ struct AddView: View {
                     favAffirmation.isFavorite = favorite
                     favAffirmation.isCustom = true
                     PersistenceController.shared.save()
+                    // TODO: Add pop-up when affirmation is saved 
                 } label: {
                     Image(systemName: "plus")
                     Text("Save Affirmation")
