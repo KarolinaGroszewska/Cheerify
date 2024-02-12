@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A008E0C2B7ACEC20094D9BC /* CheerifyAffirmationClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4A008E0B2B7ACEC20094D9BC /* CheerifyAffirmationClassifier.mlmodel */; };
 		4A5AAD172B489833004ADC02 /* CheerifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5AAD162B489833004ADC02 /* CheerifyApp.swift */; };
 		4A5AAD192B489833004ADC02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5AAD182B489833004ADC02 /* ContentView.swift */; };
 		4A5AAD1B2B489834004ADC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5AAD1A2B489834004ADC02 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A008E0B2B7ACEC20094D9BC /* CheerifyAffirmationClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CheerifyAffirmationClassifier.mlmodel; sourceTree = "<group>"; };
 		4A5AAD132B489833004ADC02 /* Cheerify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheerify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A5AAD162B489833004ADC02 /* CheerifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerifyApp.swift; sourceTree = "<group>"; };
 		4A5AAD182B489833004ADC02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,12 +70,13 @@
 				4A5B04182B4C9AB100535F08 /* Affirmation.swift */,
 				4A5B04162B4C9A6E00535F08 /* FavoritesView.swift */,
 				4A5AAD262B48AE66004ADC02 /* AddView.swift */,
+				4A008E0B2B7ACEC20094D9BC /* CheerifyAffirmationClassifier.mlmodel */,
 				4A5AAD162B489833004ADC02 /* CheerifyApp.swift */,
 				4A5AAD182B489833004ADC02 /* ContentView.swift */,
 				4A5B04122B4C986300535F08 /* PersistenceController.swift */,
-				4A5B040F2B4C97BE00535F08 /* Affirmation.xcdatamodeld */,
 				4A5AAD242B48ABA4004ADC02 /* MenuView.swift */,
 				4A5B041A2B4CA08700535F08 /* CustomView.swift */,
+				4A5B040F2B4C97BE00535F08 /* Affirmation.xcdatamodeld */,
 				4A5AAD1A2B489834004ADC02 /* Assets.xcassets */,
 				4A5AAD1C2B489834004ADC02 /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 				4A5B04132B4C986300535F08 /* PersistenceController.swift in Sources */,
 				4A5B04192B4C9AB100535F08 /* Affirmation.swift in Sources */,
 				4A5B04172B4C9A6E00535F08 /* FavoritesView.swift in Sources */,
+				4A008E0C2B7ACEC20094D9BC /* CheerifyAffirmationClassifier.mlmodel in Sources */,
 				4A5AAD252B48ABA4004ADC02 /* MenuView.swift in Sources */,
 				4A5AAD172B489833004ADC02 /* CheerifyApp.swift in Sources */,
 			);
