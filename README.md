@@ -87,7 +87,7 @@ Cheerify is a mobile application for iOS designed to uplift and inspire users th
 
 ### Built With
 
-[![Swift][Swift.io]][Swift-url]
+*[![Swift][Swift.io]][Swift-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
