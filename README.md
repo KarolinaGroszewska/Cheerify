@@ -35,7 +35,7 @@
 <h3 align="center">Cheerify</h3>
 
   <p align="center">
-    An iOS affirmation app designed to boost your spirits and promote positivity – built for Global Hack Week at MLH.
+    An iOS affirmation app designed to boost your spirits and promote positivity – built for Global Hack Week at MLH. This README was a part of a stream too!
 <!--     <br />
     <a href="https://github.com/KarolinaGroszewska/Cheerify"><strong>Explore the docs »</strong></a>
     <br />
