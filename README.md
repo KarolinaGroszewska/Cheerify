@@ -101,8 +101,6 @@ Cheerify is a mobile application for iOS designed to uplift and inspire users th
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy running, follow these steps
-
 ### Prerequisites
 
 Cheerify is built for iOS. A device which can compile code for iOS is a prerequisite to making code enhancements and fixing bugs. 
@@ -121,6 +119,7 @@ Cheerify is built for iOS. A device which can compile code for iOS is a prerequi
 ## Roadmap
 
 - [ ] Designing a logo for Cheerify
+- [ ] Update this README.md with application screenshots
 - [ ] Creating a custom Cheerify API wiht affirmations and affirmation categories
 - [ ] Save affirmations locally and securely on-device
 
