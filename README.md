@@ -35,7 +35,7 @@
 <h3 align="center">Cheerify</h3>
 
   <p align="center">
-    An iOS affirmation app designed to boost your spirits and promote positivity – built for Global Hack Week at MLH. This README was a part of a stream too!
+    An iOS affirmation app designed to boost your spirits and promote positivity – built for Global Hack Weeks at MLH.
 <!--     <br />
     <a href="https://github.com/KarolinaGroszewska/Cheerify"><strong>Explore the docs »</strong></a>
     <br />
@@ -80,6 +80,11 @@
 ## About The Project
 
 Cheerify is a mobile application for iOS designed to uplift and inspire users through affirmations. In today's fast-paced world, it's easy to feel overwhelmed or discouraged. Cheerify aims to combat these feelings by providing users with daily doses of positivity and encouragement, while allowing them to customize the application and leveraging in-app functionality to provide the best positive experience. 
+**Planned Key Features
+**
+- Personalized Affirmations: Cheerify delivers tailored affirmations based on user preferences.
+- Daily Reminders: Users receive notifications to engage with affirmations regularly, promoting a positive mindset throughout the day.
+- Customizable Experience: Users can customize their affirmation experience by selecting favorite affirmations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,26 +105,13 @@ To get a local copy running, follow these steps
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Cheerify is built for iOS. A device which can compile code for iOS is a prerequisite to making code enhancements and fixing bugs. 
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/KarolinaGroszewska/Cheerify.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -128,10 +120,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Designing a logo for Cheerify
+- [ ] Creating a custom Cheerify API wiht affirmations and affirmation categories
+- [ ] Save affirmations locally and securely on-device
 
 See the [open issues](https://github.com/KarolinaGroszewska/Cheerify/issues) for a full list of proposed features (and known issues).
 
@@ -169,20 +160,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Kari Groszewska - [@techwithkari](https://twitter.com/techwithkari)
 
 Project Link: [https://github.com/KarolinaGroszewska/Cheerify](https://github.com/KarolinaGroszewska/Cheerify)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
