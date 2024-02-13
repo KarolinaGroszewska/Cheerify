@@ -87,7 +87,7 @@ Cheerify is a mobile application for iOS designed to uplift and inspire users th
 
 ### Built With
 
-[![Swift][Swift]][Swift-url]
+[![Swift][Swift.io]][Swift-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,5 +203,5 @@ Project Link: [https://github.com/KarolinaGroszewska/Cheerify](https://github.co
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/KarolinaGroszewska
 [product-screenshot]: images/screenshot.png
-[Swift]: [https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white
+[Swift.io]: [https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white
 [Swift-url]: https://www.swift.org/
