@@ -80,8 +80,7 @@
 ## About The Project
 
 Cheerify is a mobile application for iOS designed to uplift and inspire users through affirmations. In today's fast-paced world, it's easy to feel overwhelmed or discouraged. Cheerify aims to combat these feelings by providing users with daily doses of positivity and encouragement, while allowing them to customize the application and leveraging in-app functionality to provide the best positive experience. 
-**Planned Key Features
-**
+
 - Personalized Affirmations: Cheerify delivers tailored affirmations based on user preferences.
 - Daily Reminders: Users receive notifications to engage with affirmations regularly, promoting a positive mindset throughout the day.
 - Customizable Experience: Users can customize their affirmation experience by selecting favorite affirmations.
