@@ -69,10 +69,7 @@ struct AddView: View {
                   .foregroundColor(Color(red: 63/255, green: 65/255, blue: 78/255))
                   .padding()
                   .lineLimit(3, reservesSpace: true)
-                Text(categoryMessage.isEmpty ? "" : "Saving affirmation to \(categoryMessage) category")
-                    .font(.footnote)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color(red: 63/255, green: 65/255, blue: 78/255))
+
                 Button {
                     let favAffirmation = Entity(context: managedObjectContext)
                     favAffirmation.text = newAffirmation
@@ -98,6 +95,11 @@ struct AddView: View {
                 .foregroundColor(Color.white)
                 .background(Color(red: 196/255, green: 197/255, blue: 202/255))
                 .clipShape(RoundedRectangle(cornerRadius: 25))
+                Text(categoryMessage.isEmpty ? "" : "Saving affirmation under \(categoryMessage) category")
+                    .font(.subheadline)
+                    .foregroundColor(Color(red: 63/255, green: 65/255, blue: 78/255))
+                    .fontWeight(.semibold)
+                    .padding()
                 Spacer()
             }
         }
