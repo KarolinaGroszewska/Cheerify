@@ -87,7 +87,7 @@ Cheerify is a mobile application for iOS designed to uplift and inspire users th
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <div align="center">
-  <img src="https://github.com/Yashraj49/Cheerify/assets/88454884/afc46aee-9a6f-4f23-9b43-4eb22c2c9e4c" alt="Screenshot">
+  <img src="https://github.com/Yashraj49/Cheerify/blob/New_AppIcon/App%20screenshots.jpg">
 </div>
 
 
