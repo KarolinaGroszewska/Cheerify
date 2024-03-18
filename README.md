@@ -1,4 +1,3 @@
-
 <a name="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -87,6 +86,10 @@ Cheerify is a mobile application for iOS designed to uplift and inspire users th
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<div align="center">
+  <img src="https://github.com/Yashraj49/Cheerify/blob/New_AppIcon/App%20screenshots.jpg">
+</div>
+
 
 
 ### Built With
@@ -117,8 +120,6 @@ Cheerify is built for iOS. A device which can compile code for iOS is a prerequi
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Designing a logo for Cheerify
-- [ ] Update this README.md with application screenshots
 - [ ] Creating a custom Cheerify API wiht affirmations and affirmation categories
 - [ ] Save affirmations locally and securely on-device
 

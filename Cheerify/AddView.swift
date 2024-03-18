@@ -9,7 +9,7 @@ import CoreML
 import SwiftUI
 
 struct AddView: View {
-    
+    @State private var showAlert = false
     var backButton : some View { Button(action: {
         self.presentationMode.wrappedValue.dismiss()
         }) {
@@ -29,6 +29,7 @@ struct AddView: View {
     @State var favorite = false
     @State var newAffirmation = ""
     @State var categoryMessage = ""
+    @State private var showPopUp = false
     var body: some View {
         ZStack{
             Color(red: 242/255, green: 237/255, blue: 228/255)
@@ -76,7 +77,7 @@ struct AddView: View {
                     favAffirmation.isFavorite = favorite
                     favAffirmation.isCustom = true
                     PersistenceController.shared.save()
-                    // TODO: Add pop-up when affirmation is saved 
+                    showPopUp = true
                 } label: {
                     Image(systemName: "plus")
                     Text("Save Affirmation")
@@ -85,6 +86,12 @@ struct AddView: View {
                 .foregroundColor(Color.white)
                 .background(Color(red: 196/255, green: 197/255, blue: 202/255))
                 .clipShape(RoundedRectangle(cornerRadius: 25))
+                .sheet(isPresented: $showPopUp) {
+                    PopUpView(isShowing: $showPopUp)
+                        .presentationDetents([.height(300)])
+                        .presentationCornerRadius(70)
+                }
+                
                 Button {
                     determineCategory()
                 } label: {
@@ -117,6 +124,50 @@ struct AddView: View {
     }
 }
 
+struct PopUpView: View {
+    @Binding var isShowing: Bool
+    
+    var body: some View {
+        ZStack {
+            Color.black.opacity(0.6).edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Text("Affirmation Saved")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                
+                Text("Your affirmation has been saved.")
+                    .foregroundColor(.white)
+                    .padding()
+                
+                Button(action: {
+                    withAnimation {
+                        self.isShowing = false
+                    }
+                }) {
+                    Text("OK")
+                        .frame(width: 100)
+                        .foregroundColor(.black)
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(20)
+                        .shadow(color: Color.black.opacity(0.3), radius: 5, x: 0, y: 5)
+                        
+                       
+                }
+            }
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 15)
+                    .foregroundColor(Color.gray)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 10)
+            )
+            .padding()
+            
+        }
+    }
+}
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
         AddView()
